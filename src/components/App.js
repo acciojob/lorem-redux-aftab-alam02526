@@ -1,13 +1,13 @@
-
 import React from "react";
-import './../styles/App.css';
+import LoremComponent from "./LoremComponent";
 
-const App = () => {
+function App() {
   return (
     <div>
-        {/* Do not remove the main div */}
+      <h1>Lorem Redux App</h1>
+      <LoremComponent />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
