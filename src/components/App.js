@@ -1,13 +1,12 @@
 import React from "react";
-import LoremComponent from "./LoremComponent";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import App from "./components/App";
+import store from "./store";
 
-function App() {
-  return (
-    <div>
-      <h1>Lorem Redux App</h1>
-      <LoremComponent />
-    </div>
-  );
-}
-
-export default App;
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("root")
+);
